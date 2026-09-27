@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Abdur Rahman — Machine Learning & Software</title>
+  <meta name="description" content="Abdur Rahman — B.Tech Computer Science & Engineering student at Amity University Jharkhand, building and deploying machine learning systems.">
+  <meta name="author" content="Abdur Rahman">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdur Rahman — Machine Learning & Software">
+  <meta property="og:description" content="B.Tech CSE student building and deploying machine learning systems — from fine-tuned transformers to explainable health-risk models.">
+  <meta property="og:url" content="https://abdurhaq.github.io/">
+  <meta property="og:image" content="https://abdurhaq.github.io/assets/portrait.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Set theme before paint to avoid a flash
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <nav class="nav__inner" aria-label="Primary">
+      <a href="#top" class="nav__brand" aria-label="Abdur Rahman, back to top">
+        <span class="nav__logo" aria-hidden="true">AR</span>
+        <span>Abdur Rahman</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></g></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.2 14.6A8.5 8.5 0 0 1 9.4 3.8a.6.6 0 0 0-.8-.7A9.5 9.5 0 1 0 20.9 15.4a.6.6 0 0 0-.7-.8Z"/></svg>
+        </button>
+        <a class="btn btn--small" href="assets/Abdur-Rahman-Resume.pdf" download>Resume</a>
+        <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+        <div class="grid-fade"></div>
+      </div>
+      <div class="hero__content" id="heroContent">
+        <div class="avatar">
+          <picture>
+            <source srcset="assets/portrait.webp" type="image/webp">
+            <img src="assets/portrait.jpg" alt="Portrait of Abdur Rahman" width="480" height="480" fetchpriority="high">
+          </picture>
+        </div>
+        <p class="eyebrow hero__eyebrow">Computer Science &amp; Engineering · Amity University Jharkhand</p>
+        <h1 class="hero__title">
+          <span class="line"><span>Abdur Rahman.</span></span>
+        </h1>
+        <p class="hero__tagline gradient-text"><span>Data in. Intelligence out.</span></p>
+        <p class="hero__lede">I build machine learning systems that don’t just work in a notebook — they ship, explain themselves, and run live for anyone to use.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#work">See my work</a>
+          <a class="link-arrow" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ STATEMENT (scroll text reveal) ============ -->
+    <section class="statement" id="about" aria-label="About">
+      <div class="statement__sticky">
+        <p class="eyebrow">About</p>
+        <p class="statement__text" id="statementText">I’m a Computer Science undergraduate from Ranchi who turns data into decisions. I’ve fine-tuned transformers on tens of thousands of sentences, built explainable models that predict health risk, and written the ML brain of an AI-driven smart irrigation system. I care about models that are accurate, understandable, and actually deployed.</p>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section stats" aria-label="Highlights">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat reveal">
+            <div class="stat__num"><span data-count="91" data-suffix="%+">0</span></div>
+            <p class="stat__label">validation accuracy on my fine-tuned DistilBERT sentiment model</p>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__num"><span data-count="67000" data-suffix="+">0</span></div>
+            <p class="stat__label">sentences from Stanford SST-2 used for fine-tuning</p>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__num"><span data-count="0.83" data-decimals="2">0</span></div>
+            <p class="stat__label">ROC-AUC on my diabetes risk prediction model</p>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__num"><span data-count="2">0</span></div>
+            <p class="stat__label">ML apps deployed live on Streamlit Cloud for anyone to try</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section work" id="work">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Featured work</p>
+          <h2 class="section__title">Projects.<br><span class="muted">Built to be used.</span></h2>
+        </header>
+
+        <!-- Project 1: Sentiment -->
+        <article class="project tile reveal" data-tilt>
+          <div class="project__text">
+            <p class="project__kicker">Natural Language Processing</p>
+            <h3 class="project__title">Sentiment Analysis <span class="gradient-text gradient-text--blue">Web App</span></h3>
+            <p class="project__desc">A DistilBERT transformer fine-tuned to read the mood of any sentence, served in a real-time web app with confidence scores and analysis history.</p>
+            <ul class="project__points">
+              <li>Fine-tuned DistilBERT on <strong>67,000+ sentences</strong> from the Stanford SST-2 dataset using HuggingFace Transformers and PyTorch.</li>
+              <li>Reached <strong>91%+ validation accuracy</strong> with GPU-accelerated training, mixed precision and early stopping.</li>
+              <li>Interactive Streamlit app with real-time predictions, confidence scores and analysis history.</li>
+              <li>Trained model hosted on the HuggingFace Hub; live app deployed on Streamlit Cloud.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech stack">
+              <li>Transformers</li><li>HuggingFace</li><li>DistilBERT</li><li>PyTorch</li><li>Python</li><li>Streamlit</li>
+            </ul>
+            <div class="project__cta">
+              <a class="btn" href="https://sentiment-analyzer-erkjwmgj2wfdydgwkwatpb.streamlit.app/" target="_blank" rel="noopener">Try it live</a>
+              <a class="link-arrow" href="https://github.com/abdurhaq/Sentiment-Analyzer" target="_blank" rel="noopener">View source</a>
+            </div>
+          </div>
+          <div class="project__visual">
+            <div class="window" aria-hidden="true">
+              <div class="window__bar"><i></i><i></i><i></i><span>sentiment-analyzer</span></div>
+              <div class="window__body">
+                <div class="sa__label">Enter a sentence</div>
+                <div class="sa__input"><span id="saText"></span><span class="caret"></span></div>
+                <div class="sa__result" id="saResult">
+                  <span class="sa__pill" id="saPill">Positive</span>
+                  <div class="sa__bar"><span id="saBar"></span></div>
+                  <span class="sa__conf">confidence</span>
+                </div>
+                <div class="sa__history" id="saHistory"></div>
+              </div>
+            </div>
+            <p class="visual-caption">Illustration of the app. <a href="https://sentiment-analyzer-erkjwmgj2wfdydgwkwatpb.streamlit.app/" target="_blank" rel="noopener">Try the real model →</a></p>
+          </div>
+        </article>
+
+        <!-- Project 2: Diabetes -->
+        <article class="project project--flip tile reveal" data-tilt>
+          <div class="project__text">
+            <p class="project__kicker">Healthcare · Explainable ML</p>
+            <h3 class="project__title">Diabetes Risk <span class="gradient-text gradient-text--warm">Prediction System</span></h3>
+            <p class="project__desc">An end-to-end ML pipeline that estimates a person’s diabetes risk — and uses SHAP to explain exactly why it made each prediction.</p>
+            <ul class="project__points">
+              <li>Built an end-to-end pipeline and benchmarked <strong>four models</strong>: Logistic Regression, SVM, Random Forest and XGBoost.</li>
+              <li>Random Forest achieved <strong>77% accuracy</strong> and <strong>0.83 ROC-AUC</strong>.</li>
+              <li>Deployed as a Streamlit app with <strong>SHAP explainability</strong> for every prediction.</li>
+            </ul>
+            <ul class="chips" aria-label="Tech stack">
+              <li>Python</li><li>Scikit-learn</li><li>XGBoost</li><li>SHAP</li><li>Streamlit</li>
+            </ul>
+            <div class="project__cta">
+              <a class="btn" href="https://abdurhaq-diabetes-risk-predictor-app-8rk23g.streamlit.app/" target="_blank" rel="noopener">Try it live</a>
+              <a class="link-arrow" href="https://github.com/abdurhaq/diabetes-risk-predictor" target="_blank" rel="noopener">View source</a>
+            </div>
+          </div>
+          <div class="project__visual">
+            <div class="roc" aria-hidden="true">
+              <div class="roc__head">
+                <span>ROC curve · Random Forest</span>
+                <span class="roc__auc">AUC <b>0.83</b></span>
+              </div>
+              <svg viewBox="0 0 300 220" class="roc__svg">
+                <defs>
+                  <linearGradient id="rocFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ff9f0a" stop-opacity=".35"/>
+                    <stop offset="1" stop-color="#ff375f" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="rocStroke" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0" stop-color="#ff375f"/>
+                    <stop offset="1" stop-color="#ff9f0a"/>
+                  </linearGradient>
+                </defs>
+                <g class="roc__grid">
+                  <path d="M30 10v180M30 190h260"/>
+                  <path d="M30 145h260M30 100h260M30 55h260M95 10v180M160 10v180M225 10v180" class="roc__minor"/>
+                </g>
+                <path d="M30 190 L290 10" class="roc__diag"/>
+                <path class="roc__area" d="M30 190 C 45 110, 80 62, 130 42 S 230 18, 290 10 L 290 190 Z" fill="url(#rocFill)"/>
+                <path class="roc__curve" d="M30 190 C 45 110, 80 62, 130 42 S 230 18, 290 10" stroke="url(#rocStroke)"/>
+                <text x="160" y="212" class="roc__axis">False positive rate</text>
+                <text x="12" y="100" class="roc__axis" transform="rotate(-90 12 100)">True positive rate</text>
+              </svg>
+              <div class="roc__models">
+                <span>LR</span><span>SVM</span><span class="is-best">Random Forest · 77%</span><span>XGBoost</span>
+              </div>
+            </div>
+            <p class="visual-caption">Illustrative curve. <a href="https://abdurhaq-diabetes-risk-predictor-app-8rk23g.streamlit.app/" target="_blank" rel="noopener">Try the real app →</a></p>
+          </div>
+        </article>
+
+        <!-- More on GitHub (live) -->
+        <div class="more reveal">
+          <div class="more__head">
+            <h3>More on GitHub</h3>
+            <a class="link-arrow" href="https://github.com/abdurhaq" target="_blank" rel="noopener">@abdurhaq</a>
+          </div>
+          <div class="repo-grid" id="repoGrid" aria-live="polite">
+            <div class="repo repo--skeleton"></div>
+            <div class="repo repo--skeleton"></div>
+            <div class="repo repo--skeleton"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BIG STATEMENT ============ -->
+    <section class="zoom" aria-hidden="true">
+      <div class="zoom__sticky">
+        <p class="zoom__text" id="zoomText">Accurate.<br>Explainable.<br><span class="gradient-text">Deployed.</span></p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section experience" id="experience">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section__title">Research, fieldwork<br><span class="muted">&amp; leadership.</span></h2>
+        </header>
+
+        <ol class="timeline" id="timeline">
+          <li class="timeline__progress" aria-hidden="true"><span id="timelineFill"></span></li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card tile">
+              <div class="tl-meta"><span class="tl-tag">Government Internship</span><time>June – July 2026</time></div>
+              <h3>Jharkhand Grassroots Innovation Intern</h3>
+              <p class="tl-org">Government of Jharkhand</p>
+              <p>Documented traditional practices and grassroots innovations in Lalgutua Panchayat, Ranchi, as part of a state-run innovation scouting initiative.</p>
+              <a class="link-arrow" href="https://drive.google.com/file/d/1yn2-0xqLAozLKBhlYQt0-0wR9xE2BTqp/view?usp=drivesdk" target="_blank" rel="noopener">View certificate</a>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card tile">
+              <div class="tl-meta"><span class="tl-tag tl-tag--green">Research Internship</span><time>May – June 2026</time></div>
+              <h3>IoT &amp; AI-Driven Soil Monitoring Smart Irrigation System</h3>
+              <p class="tl-org">JCSTI-funded research project</p>
+              <ul>
+                <li>Developed the machine learning model powering the smart irrigation system.</li>
+                <li>Worked under the guidance of Dr. Mohit Kumar (PI) and Dr. Purushottam Singh (Co-PI).</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card tile">
+              <div class="tl-meta"><span class="tl-tag tl-tag--purple">Leadership</span><time>2025 – 26</time></div>
+              <h3>Placement Co-ordinator</h3>
+              <p class="tl-org">Amity University Jharkhand</p>
+              <p>Serving as a student Placement Co-ordinator for the 2025–26 academic session.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section__title">The toolkit.</h2>
+        </header>
+
+        <div class="bento">
+          <div class="bento__cell bento__cell--wide tile reveal" data-spotlight>
+            <div class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 3a3 3 0 0 0-3 3v1a3 3 0 0 0-3 3 3 3 0 0 0 1 5.2V16a3 3 0 0 0 5 2.2A3 3 0 0 0 17 16v-.8A3 3 0 0 0 18 10a3 3 0 0 0-3-3V6a3 3 0 0 0-3-3Zm0 0v15.2"/></svg>
+            </div>
+            <h3>Machine Learning &amp; Data</h3>
+            <ul class="chips chips--lg">
+              <li>TensorFlow</li><li>PyTorch</li><li>Scikit-learn</li><li>HuggingFace Transformers</li><li>XGBoost</li><li>SHAP</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Streamlit</li>
+            </ul>
+          </div>
+          <div class="bento__cell tile reveal" data-spotlight>
+            <div class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></svg>
+            </div>
+            <h3>Languages</h3>
+            <ul class="lang-list">
+              <li><span>Python</span></li>
+              <li><span>Java</span></li>
+              <li><span>C / C++</span></li>
+            </ul>
+          </div>
+          <div class="bento__cell tile reveal" data-spotlight>
+            <div class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Zm0 0v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </div>
+            <h3>Core CS</h3>
+            <ul class="chips">
+              <li>Data Structures &amp; Algorithms</li><li>OOP</li><li>DBMS</li><li>Operating Systems</li><li>Computer Networks</li>
+            </ul>
+          </div>
+          <div class="bento__cell bento__cell--wide tile reveal" data-spotlight>
+            <div class="bento__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.6 17.2a1.6 1.6 0 0 0 2.3 2.3l5.7-5.7a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.2-.4-.4-2.2 2.5-2.5-.5.5Z"/></svg>
+            </div>
+            <h3>Tools</h3>
+            <ul class="chips chips--lg">
+              <li>Git</li><li>GitHub</li><li>HuggingFace Hub</li><li>VS Code</li><li>PyCharm</li><li>Google Colab</li><li>Anaconda</li><li>Streamlit Cloud</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>DistilBERT</span><span>Scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span><span>HuggingFace</span><span>Java</span><span>C++</span><span>Git</span>
+          <span>Python</span><span>PyTorch</span><span>TensorFlow</span><span>DistilBERT</span><span>Scikit-learn</span><span>XGBoost</span><span>SHAP</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span><span>HuggingFace</span><span>Java</span><span>C++</span><span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section education" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="section__title">Always learning.</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="edu tile edu--main reveal" data-spotlight>
+            <div class="ring" data-value="77.2" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="ring__track"/><circle cx="60" cy="60" r="52" class="ring__bar ring__bar--blue"/></svg>
+              <div class="ring__label"><b>7.72</b><small>CGPA</small></div>
+            </div>
+            <div class="edu__body">
+              <p class="edu__years">2023 – 2027</p>
+              <h3>B.Tech, Computer Science &amp; Engineering</h3>
+              <p class="edu__school">Amity University Jharkhand, Ranchi</p>
+            </div>
+          </article>
+          <article class="edu tile reveal" data-spotlight>
+            <div class="ring" data-value="80" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="ring__track"/><circle cx="60" cy="60" r="52" class="ring__bar ring__bar--green"/></svg>
+              <div class="ring__label"><b>80%</b><small>ISC</small></div>
+            </div>
+            <div class="edu__body">
+              <p class="edu__years">2021</p>
+              <h3>ISC · Class XII</h3>
+              <p class="edu__school">St. Xavier’s School, Ranchi</p>
+            </div>
+          </article>
+          <article class="edu tile reveal" data-spotlight>
+            <div class="ring" data-value="91.6" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="ring__track"/><circle cx="60" cy="60" r="52" class="ring__bar ring__bar--orange"/></svg>
+              <div class="ring__label"><b>91.6%</b><small>ICSE</small></div>
+            </div>
+            <div class="edu__body">
+              <p class="edu__years">2019</p>
+              <h3>ICSE · Class X</h3>
+              <p class="edu__school">St. Xavier’s School, Ranchi</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="recog">
+          <a class="recog__card tile reveal" href="https://d3uam8jk4sa4y4.cloudfront.net/static/certificates/atf_stage_1_25/abdur-rahman.png" target="_blank" rel="noopener" data-spotlight>
+            <span class="recog__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm-3.5-1.1L7 21l5-2.5 5 2.5-1.5-7.1"/></svg>
+            </span>
+            <span class="recog__text">
+              <span class="recog__kicker">Certification</span>
+              <strong>ATF 2025 — Stage 2 Candidate</strong>
+              <span>Stage 1 cleared</span>
+            </span>
+            <span class="recog__go" aria-hidden="true">↗</span>
+          </a>
+          <a class="recog__card tile reveal" href="https://codeforces.com/profile/abdurhaq" target="_blank" rel="noopener" data-spotlight>
+            <span class="recog__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M4.5 7.5A1.5 1.5 0 0 1 6 9v10.5A1.5 1.5 0 0 1 4.5 21h-3A1.5 1.5 0 0 1 0 19.5V9a1.5 1.5 0 0 1 1.5-1.5h3Zm9-4.5A1.5 1.5 0 0 1 15 4.5v15a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 19.5v-15A1.5 1.5 0 0 1 10.5 3h3Zm9 7.5A1.5 1.5 0 0 1 24 12v7.5a1.5 1.5 0 0 1-1.5 1.5h-3a1.5 1.5 0 0 1-1.5-1.5V12a1.5 1.5 0 0 1 1.5-1.5h3Z"/></svg>
+            </span>
+            <span class="recog__text">
+              <span class="recog__kicker">Competitive programming</span>
+              <strong>Codeforces</strong>
+              <span>@abdurhaq</span>
+            </span>
+            <span class="recog__go" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Let’s build<br><span class="gradient-text">something together.</span></h2>
+          <p class="section__sub">Have an opportunity, a project idea, or just a question? My inbox is always open.</p>
+        </header>
+
+        <div class="contact__grid">
+          <form class="contact__form tile reveal" id="contactForm" novalidate>
+            <div class="field">
+              <input id="cf-name" name="name" type="text" placeholder=" " autocomplete="name" required>
+              <label for="cf-name">Your name</label>
+            </div>
+            <div class="field">
+              <input id="cf-email" name="email" type="email" placeholder=" " autocomplete="email" required>
+              <label for="cf-email">Email address</label>
+            </div>
+            <div class="field">
+              <textarea id="cf-message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="cf-message">Message</label>
+            </div>
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn--block" type="submit" id="cfSubmit">
+              <span class="btn__label">Send message</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact__links reveal">
+            <a class="clink tile" href="mailto:abdurrahman7913@gmail.com" data-spotlight>
+              <span class="clink__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm0 .5 9 6 9-6"/></svg></span>
+              <span><small>Email</small>abdurrahman7913@gmail.com</span>
+            </a>
+            <a class="clink tile" href="tel:+917480054553" data-spotlight>
+              <span class="clink__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.3-2.1 1.4a11 11 0 0 0 5.1 5.1l1.4-2.1 4.3 1.6V17a2 2 0 0 1-2 2A15.5 15.5 0 0 1 3 5.5a2 2 0 0 1 2-2Z"/></svg></span>
+              <span><small>Phone</small>+91 74800 54553</span>
+            </a>
+            <a class="clink tile" href="https://linkedin.com/in/abdur-rahman-5bb0a1253/" target="_blank" rel="noopener" data-spotlight>
+              <span class="clink__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2Zm1.8 13.1H3.6V9h3.5v11.5Z"/></svg></span>
+              <span><small>LinkedIn</small>abdur-rahman</span>
+            </a>
+            <a class="clink tile" href="https://github.com/abdurhaq" target="_blank" rel="noopener" data-spotlight>
+              <span class="clink__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg></span>
+              <span><small>GitHub</small>@abdurhaq</span>
+            </a>
+            <a class="clink tile" href="assets/Abdur-Rahman-Resume.pdf" download data-spotlight>
+              <span class="clink__icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg></span>
+              <span><small>Resume</small>Download PDF</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed &amp; built by Abdur Rahman · Ranchi, India</p>
+      <p>Copyright © <span id="year">2026</span> Abdur Rahman. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
